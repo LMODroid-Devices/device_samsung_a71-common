@@ -445,12 +445,15 @@
         </interface>
         <fqname>@2.0::ISehGnss/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.health</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
+    <hal format="aidl" override="true">
+        <name>vendor.samsung.hardware.keymint</name>
+        <version>1</version>
         <interface>
-            <name>ISehHealth</name>
+            <name>ISehKeyMintExtension</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ISehKeyMintFactory</name>
             <instance>default</instance>
         </interface>
     </hal>
